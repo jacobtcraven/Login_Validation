@@ -1,9 +1,5 @@
 <?php
 session_start();
-if($_SESSION['status'] != 'valid'){
-    header("Location:index.php");
-    exit();
-}
 if($_SERVER["REQUEST_METHOD"]=="POST"){
     $username=$_POST['username'];
     $password=$_POST['password'];
